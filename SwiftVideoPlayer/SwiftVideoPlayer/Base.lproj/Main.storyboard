@@ -20,12 +20,15 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ON-XR-CDk">
                                 <rect key="frame" x="50" y="220" width="220" height="40"/>
                                 <animations/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="Pyj-W2-kod"/>
                                     <constraint firstAttribute="height" constant="40" id="oem-HC-YNK"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Choose Video from Gallery"/>
+                                <connections>
+                                    <action selector="chooseVideoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="auO-KG-VzW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>

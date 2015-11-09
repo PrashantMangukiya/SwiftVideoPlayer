@@ -288,6 +288,7 @@
 				8F4181CE1BEF21170031F8AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
