@@ -12,6 +12,7 @@
 		8F4181C31BEF21170031F8AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4181C11BEF21170031F8AD /* Main.storyboard */; };
 		8F4181C51BEF21170031F8AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F4181C41BEF21170031F8AD /* Assets.xcassets */; };
 		8F4181C81BEF21170031F8AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4181C61BEF21170031F8AD /* LaunchScreen.storyboard */; };
+		8FCC98631BF1E01B00AA7217 /* sample.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8FCC98621BF1E01B00AA7217 /* sample.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		8F4181C71BEF21170031F8AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F4181C91BEF21170031F8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F4181CF1BEF21FB0031F8AD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8FCC98621BF1E01B00AA7217 /* sample.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sample.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		8F4181BC1BEF21170031F8AD /* SwiftVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				8FCC98621BF1E01B00AA7217 /* sample.mov */,
 				8F4181BD1BEF21170031F8AD /* AppDelegate.swift */,
 				8F4181BF1BEF21170031F8AD /* ViewController.swift */,
 				8F4181C11BEF21170031F8AD /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCC98631BF1E01B00AA7217 /* sample.mov in Resources */,
 				8F4181C81BEF21170031F8AD /* LaunchScreen.storyboard in Resources */,
 				8F4181C51BEF21170031F8AD /* Assets.xcassets in Resources */,
 				8F4181C31BEF21170031F8AD /* Main.storyboard in Resources */,

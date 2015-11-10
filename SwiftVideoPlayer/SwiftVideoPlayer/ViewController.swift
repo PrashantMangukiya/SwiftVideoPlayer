@@ -14,9 +14,27 @@ import AVFoundation
 class ViewController: UIViewController, AVPlayerViewControllerDelegate {
 
     
+    // url for playing video
+    var videoUrl: NSURL!
     
-    // action - choose video button
-    @IBAction func chooseVideoButtonAction(sender: UIButton) {
+    
+    // action - play local video
+    @IBAction func playLocalVideo(sender: UIButton) {
+        
+        // create video url from local resource (i.e video stored within project folder)
+        self.videoUrl = NSBundle.mainBundle().URLForResource("sample", withExtension: "mov")!
+        
+        // perform segue
+        self.performSegueWithIdentifier("seguePlayVideo", sender: self)
+    }
+
+    // action - play remote video
+    @IBAction func playRemoteVideo(sender: UIButton) {
+        
+        // create video url form remote location (i.e. video stored at domain etc.)
+        self.videoUrl = NSURL(string: "http://download.prashantmangukiya.com/SwiftVideoPlayer-Data/Big_Buck_Bunny_Trailer.m4v")
+
+        // perform segue
         self.performSegueWithIdentifier("seguePlayVideo", sender: self)
     }
     
@@ -47,15 +65,11 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
             // get destination view controller
             let destVc = segue.destinationViewController as! AVPlayerViewController
             
-            // create video url ( url added soon..)
-            let videoUrl = NSURL(string: "http://www.website.com/video-file.mov")
-            
-            // set player with url
-            destVc.player = AVPlayer(URL: videoUrl!)
+            // set player
+            destVc.player = AVPlayer(URL: self.videoUrl)
         }
         
     }
-    
     
     
 }

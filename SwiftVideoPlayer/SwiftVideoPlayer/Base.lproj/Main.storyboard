@@ -18,16 +18,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ON-XR-CDk">
-                                <rect key="frame" x="50" y="220" width="220" height="40"/>
+                                <rect key="frame" x="35" y="170" width="250" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="Pyj-W2-kod"/>
+                                    <constraint firstAttribute="width" constant="250" id="Pyj-W2-kod"/>
                                     <constraint firstAttribute="height" constant="40" id="oem-HC-YNK"/>
                                 </constraints>
-                                <state key="normal" title="Choose Video from Gallery"/>
+                                <state key="normal" title="Play Local Video"/>
                                 <connections>
-                                    <action selector="chooseVideoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="auO-KG-VzW"/>
+                                    <action selector="playLocalVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Df-Ys-E92"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnC-mA-zpo">
+                                <rect key="frame" x="35" y="270" width="250" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Ngy-1W-l7b"/>
+                                    <constraint firstAttribute="height" constant="40" id="TZA-3O-Ri3"/>
+                                </constraints>
+                                <state key="normal" title="Play Remote Video"/>
+                                <connections>
+                                    <action selector="playRemoteVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8K3-iq-Zas"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,7 +48,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3ON-XR-CDk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9lx-U4-WwL"/>
-                            <constraint firstItem="3ON-XR-CDk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XBE-Au-LXt"/>
+                            <constraint firstItem="3ON-XR-CDk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="XBE-Au-LXt"/>
+                            <constraint firstItem="XnC-mA-zpo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="YR9-VZ-JpT"/>
+                            <constraint firstItem="XnC-mA-zpo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i1d-Fr-L0s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Swift Video Player" id="1s0-DT-pRO"/>
